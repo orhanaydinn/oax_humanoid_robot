@@ -15,7 +15,7 @@ The system uses a custom **OAX-1B-Humanoid** language model fine-tuned for robot
 A full demonstration video is available here:
 
 **Watch the demo video:**  
-[Google Drive Demo Video](PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE)
+[General Video](https://drive.google.com/file/d/1RxVhzRdtgY-IFzAmc1D7efbQyPrlYRvs/view?usp=drive_link)
 
 The video demonstrates:
 
