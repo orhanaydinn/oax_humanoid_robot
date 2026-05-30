@@ -19,6 +19,8 @@ A full demonstration video is available here:
 
 
 [Pick the Item Mission](https://drive.google.com/file/d/1j66xS044M23ib0o_Fbe2aAZ1U9b1IxEU/view?usp=drive_link)
+
+
 The video demonstrates:
 
 - entering a natural language command,
