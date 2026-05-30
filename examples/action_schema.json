@@ -1,0 +1,39 @@
+{
+  "description": "Example action schema used by the LLM-enabled humanoid robot system.",
+  "action_format": {
+    "tool": "string",
+    "arguments": "object"
+  },
+  "allowed_tools": [
+    "get_visible_objects",
+    "search_object",
+    "track_object",
+    "pick_object",
+    "place_object",
+    "handover_object",
+    "go_home",
+    "stop_action",
+    "get_robot_status"
+  ],
+  "validation_rules": [
+    "The tool name must exist in allowed_tools.",
+    "Required arguments must be present.",
+    "pick_object requires a target object.",
+    "place_object requires a target location.",
+    "handover_object requires a target object or target location depending on the task context.",
+    "handover_object requires the robot to be holding an object before physical handover execution.",
+    "Unsafe or unsupported actions must be rejected.",
+    "If the target object is not visible, the Controller may request search_object before pick_object.",
+    "The Controller must check robot state before allowing physical execution."
+  ],
+  "example_valid_action": {
+    "tool": "search_object",
+    "arguments": {
+      "target": "bottle"
+    }
+  },
+  "example_invalid_action": {
+    "tool": "pick_object",
+    "arguments": {}
+  }
+}

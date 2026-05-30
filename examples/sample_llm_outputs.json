@@ -1,0 +1,68 @@
+[
+  {
+    "user_command": "What do you see?",
+    "llm_output": {
+      "tool": "get_visible_objects",
+      "arguments": {}
+    }
+  },
+  {
+    "user_command": "Find the bottle.",
+    "llm_output": {
+      "tool": "search_object",
+      "arguments": {
+        "target": "bottle"
+      }
+    }
+  },
+  {
+    "user_command": "Track the bottle.",
+    "llm_output": {
+      "tool": "track_object",
+      "arguments": {
+        "target": "bottle"
+      }
+    }
+  },
+  {
+    "user_command": "Pick up the bottle.",
+    "llm_output": {
+      "tool": "pick_object",
+      "arguments": {
+        "target": "bottle"
+      }
+    }
+  },
+  {
+    "user_command": "Place the object on the table.",
+    "llm_output": {
+      "tool": "place_object",
+      "arguments": {
+        "target_location": "table"
+      }
+    }
+  },
+  {
+    "user_command": "Give me the bottle.",
+    "llm_output": {
+      "tool": "handover_object",
+      "arguments": {
+        "target": "bottle"
+      }
+    }
+  },
+  {
+    "user_command": "Go home.",
+    "llm_output": {
+      "tool": "go_home",
+      "arguments": {}
+    }
+  },
+  {
+    "user_command": "Stop.",
+    "llm_output": {
+      "tool": "stop_action",
+      "arguments": {}
+    }
+  }
+]

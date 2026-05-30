@@ -1,0 +1,42 @@
+{
+  "robot_state": {
+    "current_action": "idle",
+    "arm_position": "home",
+    "gripper_status": "open",
+    "holding_object": false,
+    "held_object": null,
+    "last_action": null,
+    "last_result": null
+  },
+  "perception_state": {
+    "visible_objects": [
+      {
+        "label": "bottle",
+        "confidence": 0.91,
+        "position": {
+          "image_center_x": 342,
+          "image_center_y": 218,
+          "depth_mm": 720
+        }
+      },
+      {
+        "label": "cup",
+        "confidence": 0.87,
+        "position": {
+          "image_center_x": 516,
+          "image_center_y": 244,
+          "depth_mm": 680
+        }
+      }
+    ],
+    "target_object": "bottle",
+    "target_visible": true
+  },
+  "task_state": {
+    "active_task": "search_object",
+    "target": "bottle",
+    "step": 2,
+    "status": "target_visible",
+    "retry_count": 0
+  }
+}
